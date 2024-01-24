@@ -5,3 +5,5 @@ This repository contains code related to the manuscript "Unveiling nonequilibriu
 In short, it deals with continuous-time Markov chains that are partially accessible: The only observable information is provided by some transitions and, importantly, the same observable can be produced by more than one transition (thus multifilar).
 
 In the Mathematica notebook plots_paper.nb, there are useful functions for calculating relevant quantities in the framework of multifilar transitions, and the original code used to generate the figures of the manuscript.
+
+I'm also including the TikZ code used to generate some examples as it might be useful.
