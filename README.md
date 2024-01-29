@@ -4,8 +4,8 @@ This repository contains code related to the manuscript "Unveiling nonequilibriu
 
 In short, it deals with continuous-time Markov chains that are partially accessible: The only observable information is provided by some transitions and, importantly, the same observable can be produced by more than one transition (thus multifilar).
 
-**plots_paper.nb**: Mathematica notebook with useful functions for calculating relevant quantities in the framework of multifilar transitions, and the original code used to generate figures of the manuscript.
+- **plots_paper.nb**: Mathematica notebook with useful functions for calculating relevant quantities in the framework of multifilar transitions, and the original code used to generate figures of the manuscript.
 
-**something.ipynb**: Jupyter notebook used to simulate the simplified Brusselator model and obtain the nonequilbrium estimators/detectors.
+- **something.ipynb**: Jupyter notebook used to simulate the simplified Brusselator model and obtain the nonequilbrium estimators/detectors.
 
-I'm also including the TikZ code used to generate some examples as it might be useful.
+- **folder tikz**: TikZ code used to generate some figures.
