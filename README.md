@@ -8,4 +8,4 @@ In short, it deals with continuous-time Markov chains that are partially accessi
 
 - **brusselator_simulation.ipynb**: Jupyter notebook used to simulate the simplified Brusselator model and obtain the nonequilbrium estimators/detectors.
 
-- **folder tikz**: TikZ code used to generate some figures.
+- **folder tikz**: TikZ codes used to generate the figures.
