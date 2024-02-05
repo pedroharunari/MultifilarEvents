@@ -1,6 +1,6 @@
 # MultifilarEvents
 
-This repository contains code related to the manuscript "Unveiling nonequilibrium from multifilar events".
+This repository contains code related to the manuscript "Unveiling nonequilibrium from multifilar events" [(arXiv:2402.00837)](https://arxiv.org/abs/2402.00837).
 
 In short, it deals with continuous-time Markov chains that are partially accessible: The only observable information is provided by some transitions and, importantly, the same observable can be produced by more than one transition (thus multifilar).
 
