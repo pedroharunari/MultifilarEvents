@@ -33,7 +33,8 @@
 
     % state space
     \node at (.5,.72) {(b)};
-    \begin{scope}[xscale=1,shift={(.8,-.9)}]
+    \begin{scope}[xscale=.95,shift={(.75,-.9)}]
+        \clip (-.27,-.4) rectangle (1.3,1.5);
         \draw (-.1-\d,0) -- (1.5,0);
         \node at (1.2, -.1) {$X$};
         \draw (0-\d,-.1) -- (0-\d,1.5);
@@ -60,11 +61,18 @@
         
     \end{scope}
 
-    \node at (3,-.27) {\includegraphics[width=0.35\textwidth]{plot_Bruss_EPR.png}};
-    \node at (2.1,.72) {(c)};
+    %trajectory sample
+    \node at (-.6,.-1.25) {(c)};
+    \begin{scope}[xscale=.9,shift={(0.9,-1.25)}]
+        \node at (0,0) {$\gamma = \{ (X \to A, t_1), (B \to Y, t_2), \ldots \}$};
+        \node at (0,-.3) {$\theta \circ \gamma = \{ (-_A, t_1), (+_B, t_2), \ldots \}$};
+    \end{scope}
+
+    \node at (3,-.45) {\includegraphics[width=0.35\textwidth]{images_tikz/plot_Bruss_EPR_2.png}};
+    \node at (2,.72) {(d)};
     
-    \node at (4.86,-.27) {\includegraphics[width=0.35\textwidth]{plot_Bruss_Dxt.png}};
-    \node at (4,.72) {(d)};
+    \node at (4.86,-.57) {\includegraphics[width=0.35\textwidth]{images_tikz/plot_Bruss_Dxt_2.png}};
+    \node at (4.1,.72) {(e)};
     
 \end{tikzpicture}
 
