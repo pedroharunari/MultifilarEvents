@@ -1,5 +1,5 @@
 \documentclass[tikz]{standalone}
-\usepackage{tikz, mathrsfs}
+\usepackage{tikz, mathrsfs, mathtools}
 \usetikzlibrary{arrows, backgrounds}
 
 \definecolor{vermelho}{RGB}{216,140,154}
@@ -52,6 +52,7 @@
     \draw [->,amarelo] (-\sepx/2,\dy/2+.13-1) to [out=150,in=30] (-\sepx/2-.15,\dy/2+.13-1);
     \draw [<-,amarelo] (-\sepx/2,\dy/2+.13-.05-1) to [out=150,in=30] (-\sepx/2-.15,\dy/2+.13-.05-1);
 
+    % state space
     \node at (.8,.72) {(b)};
     \begin{scope}[xscale=.9,shift={(1,-.7)}]
        \def \L {1};
@@ -78,13 +79,24 @@
         
     \end{scope}
 
-    \node at (3,-.27) {\includegraphics[width=0.35\textwidth]{plot_DD_EPR.png}};
-    \node at (2.1,.72) {(c)};
-    
-    \node at (4.86,-.27) {\includegraphics[width=0.35\textwidth]{plot_DD_Dxt.png}};
-    \node at (4,.72) {(d)};
+    %trajectory sample
+    \node at (-.6,.-1.3) {(c)};
+    \begin{scope}[xscale=.9,shift={(0.9,-1.3)}]
+        \node at (0,0) {$\gamma = \{ (01 \xrightarrow{3} 11, t_1), (11 \xrightarrow{1} 10, t_2), \ldots \}$};
+        \node at (0,-.3) {$\theta \circ \gamma = \{ (+_3, t_1), (-_1, t_2), \ldots \}$};
+    \end{scope}
+
+    % EPR bounds
+    \node at (3.1,-.47) {\includegraphics[width=0.35\textwidth]{images_tikz/plot_DD_EPR_2.png}};
+    \node at (2.2,.72) {(d)};
+
+    % nonequilibrium detectors
+    \node at (4.86,-.56) {\includegraphics[width=0.37\textwidth]{images_tikz/plot_DD_Dxt_2.png}};
+    \node at (4,.72) {(e)};
     
 \end{tikzpicture}
 
 
 \end{document}
+
+
